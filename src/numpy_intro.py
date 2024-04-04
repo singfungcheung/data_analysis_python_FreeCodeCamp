@@ -30,3 +30,6 @@ Exercises
 # Given the X numpy matrix, create a new numpy matrix with the same shape and type as X, filled with zeros.
 # X = np.array([[1, 2, 3], [4, 5, 6]], dtype=np.int8)
 # print(np.zeros_like(X))
+
+# Create a numpy matrix of 4*4 integers, filled with fives.
+print(np.ones([4, 4]) * 5)
