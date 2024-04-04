@@ -23,3 +23,10 @@ print(np.ones([2, 2], dtype=np.int8))
 # Create a numpy matrix of 3*2 float numbers, filled with ones.
 print(np.ones([3, 2], dtype=np.float16))
 
+# Given the X numpy array, create a new numpy array with the same shape and type as X, filled with ones.
+X = np.arange(4, dtype=np.int8)
+print(np.ones_like(X))
+
+# Given the X numpy matrix, create a new numpy matrix with the same shape and type as X, filled with zeros.
+X = np.array([[1, 2, 3], [4, 5, 6]], dtype=np.int8)
+print(np.zeros_like(X))
