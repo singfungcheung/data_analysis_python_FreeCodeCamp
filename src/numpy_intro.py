@@ -140,3 +140,107 @@ Exercises
 """
 3. Array Manipulation
 """
+# Convert the given integer numpy to float
+# X = [-5, -3, 0, 10, 40]
+# print(np.array(X, dtype=float))
+
+# Reverse the given numpy array (first element becomes last)
+# print(X[::-1])
+
+# sort the given numpy array
+# X = [0, 10, -5, 40, -3]
+# X.sort()
+# print(X)
+
+# Given the X numpy array, set the fifth element equal to 1
+# X = np.zeros(10)
+# X[4] = 1
+# print(X)
+
+# Given the X numpy array, change the 50 with a 40
+# X = np.array([10, 20, 30, 50])
+# X[3] = 40
+# print(X)
+
+# Given the X numpy matrix, change the last row with all 1
+# X = np.array([
+#     [1,   2,  3,  4],
+#     [5,   6,  7,  8],
+#     [9,  10, 11, 12],
+#     [13, 14, 15, 16]
+# ])
+# X[3, :] = 1
+# print(X)
+
+# Given the X numpy matrix, change the last item on the last row with a 0.
+# X[-1, -1] = 0
+# print(X)
+
+# Given the X numpy matrix, add 5 to every element.
+# X[:] += 5
+# print(X + 5)
+
+"""
+Boolean arrays (also called masks)
+"""
+
+# Given the X numpy array, make a mask showing negative elements
+X = np.array([-1, 2, 0, -4, 5, 6, 0, 0, -9, 10])
+# negative_mask = X < 0
+# print(negative_mask)
+
+# Get the negative elements
+# print(X[negative_mask])
+
+# Get numbers higher than 5.
+# print(X[X > 5])
+
+# Get numbers higher than mean.
+# print(X[X > X.mean()])
+
+# Get numbers equal to 2 or 10.
+# print(X[(X == 2) | (X == 10)])
+
+"""
+Logic functions
+"""
+
+# Given the X numpy array, return True if none of its elements is zero
+# print(X.all())
+
+# Given the X numpy array, return True if any of its elements is zero
+# print(X.any())
+
+"""
+Summary statistics
+"""
+
+# Given the numpy array, show the sum of its elements
+# X = np.array([3, 5, 6, 7, 2, 3, 4, 9, 4])
+# print(X.sum())
+
+# Show the mean value
+# print(X.mean())
+
+# show the sum of its columns
+X = np.array([
+    [1,   2,  3,  4],
+    [5,   6,  7,  8],
+    [9,  10, 11, 12],
+    [13, 14, 15, 16]
+])
+print(X.sum(axis=0))
+
+# Given the X numpy matrix, show the mean value of its rows
+X = np.array([
+    [1,   2,  3,  4],
+    [5,   6,  7,  8],
+    [9,  10, 11, 12],
+    [13, 14, 15, 16]
+])
+print(X.mean(axis=1))
+
+# Show the max value of elements
+X = np.array([1, 2, 0, 4, 5, 6, 0, 0, 9, 10])
+print(X.max())
+print(np.max(X))
