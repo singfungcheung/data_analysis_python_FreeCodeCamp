@@ -85,3 +85,58 @@ Exercises
 """
 2. Array Indexation
 """
+
+# Given the X numpy array, show it's first element
+# X = np.array(['A', 'B', 'C', 'D', 'E', 3])
+# print(X[0])
+
+# Given the X numpy array, show it's last element
+# X = np.array(['A', 'B', 'C', 'D', 'E'])
+# print(X[-1])
+
+# Given the X numpy array, show it's first three elements
+# X = np.array(['A', 'B', 'C', 'D', 'E'])
+# print(X[:3])
+
+# Given the X numpy array, show all middle elements
+# X = np.array(['A', 'B', 'C', 'D', 'E'])
+# print(X[1:-1])
+
+# Given the X numpy array, show the elements in reverse position
+# X = np.array(['A', 'B', 'C', 'D', 'E'])
+# print(X[::-1])
+
+# Given the X numpy array, show the elements in an odd position
+# X = np.array(['A', 'B', 'C', 'D', 'E'])
+# print(X[::2])
+
+# Given the X numpy matrix, show the first row elements
+# X = np.array([
+#     [1,   2,  3,  4],
+#     [5,   6,  7,  8],
+#     [9,  10, 11, 12],
+#     [13, 14, 15, 16]
+# ])
+# print(X[0, :])
+#
+# # Given the X numpy matrix, show the last row elements
+# print(X[-1, :])
+#
+# # Show the first element of first row
+# print(X[0, 0])
+#
+# # Show the last element of the last row
+# print(X[-1, -1])
+#
+# # show the middle row elements
+# print(X[1:-1, 1:-1])
+#
+# # Show the first 2 elements of the first 2 rows.
+# print(X[0:2, 0:2])
+#
+# # Show the last 2 elements of the last 2 rows.
+# print(X[-2:, -2:])
+
+"""
+3. Array Manipulation
+"""
